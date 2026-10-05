@@ -1,0 +1,515 @@
+{
+  "selected": 3,
+  "tickets": [
+    {
+      "locked": false,
+      "stale": false,
+      "passwordOK": true,
+      "enabled": true,
+      "exists": true,
+      "groups": [
+        "Domain Users",
+        "Finance-Read"
+      ],
+      "dns": "10.20.0.10",
+      "cache": false,
+      "ou": "Finance",
+      "gpo": true,
+      "token": true,
+      "mustChange": false,
+      "sessions": false,
+      "identity": true,
+      "approval": false,
+      "verified": true,
+      "status": "Resolved",
+      "notes": "INC-1047 — Account lockout\nPriority: P2 High | Status: Resolved\nRequester: Jasmine Brooks | Finance\nDevice: FIN-LT-022\n\nIssue: The requester could not sign in because her account was locked.\n\nInvestigation: Verified the requester’s identity through the simulated approved callback process. Inspected the phone’s mail configuration and found stored credentials from before the latest password change.\n\nRoot cause: The phone continued authenticating with an outdated password, causing repeated account lockouts.\n\nResolution: Asked the requester to remove the outdated stored credentials and authenticate with the current password. Unlocked the account after correcting the source of the failed authentication attempts.\n\nVerification: The requester successfully signed in and confirmed that access was restored.\n\nLesson learned: Unlocking an account alone does not address the device or application causing repeated failed sign-ins.",
+      "log": [
+        {
+          "time": "10:41:37 AM",
+          "text": "Identity verified using approved callback and employee record."
+        },
+        {
+          "time": "10:42:01 AM",
+          "text": "Phone mail is using credentials saved before the most recent password change."
+        },
+        {
+          "time": "10:42:17 AM",
+          "text": "Requester removed stored work credentials on the phone and signed in with the current password."
+        },
+        {
+          "time": "10:42:48 AM",
+          "text": "Sign-in failed: account locked."
+        },
+        {
+          "time": "10:43:08 AM",
+          "text": "Account unlocked."
+        },
+        {
+          "time": "10:43:16 AM",
+          "text": "Sign-in completed; refreshed security group token."
+        },
+        {
+          "time": "10:43:25 AM",
+          "text": "Requester verification: Confirmed: the requested outcome is working. Thank you."
+        },
+        {
+          "time": "10:46:51 AM",
+          "text": "Ticket resolved."
+        },
+        {
+          "time": "11:23:04 AM",
+          "text": "Ticket resolved."
+        }
+      ],
+      "messages": [
+        {
+          "who": "Service desk",
+          "text": "Available follow-up: inspect the phone sign-in configuration from the workstation tools."
+        },
+        {
+          "who": "You",
+          "text": "What changed before this started?"
+        },
+        {
+          "who": "Jasmine Brooks",
+          "text": "I changed my password yesterday. My phone keeps asking me to sign in."
+        },
+        {
+          "who": "You",
+          "text": "Complete approved identity callback."
+        },
+        {
+          "who": "Jasmine Brooks",
+          "text": "Identity confirmed through the approved callback and employee record."
+        },
+        {
+          "who": "You",
+          "text": "Please test access again / confirm the requested outcome."
+        },
+        {
+          "who": "Jasmine Brooks",
+          "text": "Confirmed: the requested outcome is working. Thank you."
+        }
+      ],
+      "terminal": [],
+      "mistakes": 0
+    },
+    {
+      "locked": false,
+      "stale": false,
+      "passwordOK": true,
+      "enabled": true,
+      "exists": true,
+      "groups": [
+        "Domain Users",
+        "Sales-Read"
+      ],
+      "dns": "10.20.0.10",
+      "cache": false,
+      "ou": "Sales",
+      "gpo": true,
+      "token": true,
+      "mustChange": true,
+      "sessions": false,
+      "identity": true,
+      "approval": false,
+      "verified": true,
+      "status": "Resolved",
+      "notes": "INC-1048 — Forgotten password\nPriority: P3 Normal | Status: Resolved\nRequester: Marcus Lee | Sales\nDevice: SAL-LT-014\n\nIssue: The requester forgot his password after returning from vacation.\n\nInvestigation: Confirmed the reported sign-in problem and verified the requester’s identity before resetting the password.\n\nRoot cause: The requester could not recall his current password.\n\nResolution: Reset the password and required a password change at the next sign-in. Explained the next sign-in steps without recording credentials in the ticket.\n\nVerification: The simulated requester confirmed that account access was restored.\n\nLesson learned: Verify identity before resetting credentials and document the outcome without including passwords.",
+      "log": [
+        {
+          "time": "10:49:19 AM",
+          "text": "Identity verified using approved callback and employee record."
+        },
+        {
+          "time": "10:49:43 AM",
+          "text": "Temporary password reset; change required at next sign-in. Password is not recorded in ticket notes."
+        },
+        {
+          "time": "10:53:53 AM",
+          "text": "Sent requester update."
+        },
+        {
+          "time": "10:54:07 AM",
+          "text": "Requester verification: Confirmed: the requested outcome is working. Thank you."
+        },
+        {
+          "time": "10:56:45 AM",
+          "text": "Ticket resolved."
+        },
+        {
+          "time": "11:23:23 AM",
+          "text": "Ticket resolved."
+        }
+      ],
+      "messages": [
+        {
+          "who": "You",
+          "text": "Complete approved identity callback."
+        },
+        {
+          "who": "Marcus Lee",
+          "text": "Identity confirmed through the approved callback and employee record."
+        },
+        {
+          "who": "You",
+          "text": "Thank you for confirming your identity, i went ahead and temporarily reset your password. It is \" WorkHardNow \" Try signing in once more and it will prompt you will a create new password message. once Completed your password should be updated."
+        },
+        {
+          "who": "Marcus Lee",
+          "text": "Message received. Use a conversation topic above for a specific diagnostic response."
+        },
+        {
+          "who": "You",
+          "text": "Please test access again / confirm the requested outcome."
+        },
+        {
+          "who": "Marcus Lee",
+          "text": "Confirmed: the requested outcome is working. Thank you."
+        }
+      ],
+      "terminal": [],
+      "mistakes": 0
+    },
+    {
+      "locked": false,
+      "stale": false,
+      "passwordOK": true,
+      "enabled": true,
+      "exists": true,
+      "groups": [
+        "Domain Users",
+        "Finance-Read"
+      ],
+      "dns": "10.20.0.10",
+      "cache": false,
+      "ou": "Finance",
+      "gpo": true,
+      "token": true,
+      "mustChange": false,
+      "sessions": false,
+      "identity": true,
+      "approval": true,
+      "verified": true,
+      "status": "Resolved",
+      "notes": "INC-1049 — Finance shared drive access denied\nPriority: P3 Normal | Status: Resolved\nRequester: Ava Patel | Finance\nDevice: FIN-LT-009\n\nIssue: After transferring from Sales to Finance, the requester could sign in but could not access the Finance share.\n\nInvestigation: Verified identity and reviewed account group membership. Identified that the account was missing the Finance-Read security group required for department access.\n\nRoot cause: Missing Finance-Read membership. After membership was added, the existing sign-in token still needed to be refreshed.\n\nResolution: Added the required Finance-Read membership and asked the requester to sign out and sign back in to refresh the security group token.\n\nVerification: The requester opened the Finance share successfully and confirmed restored access.\n\nLesson learned: A group membership change may require a new sign-in before the user’s session reflects the updated permissions.",
+      "log": [
+        {
+          "time": "10:57:16 AM",
+          "text": "Identity verified using approved callback and employee record."
+        },
+        {
+          "time": "10:58:19 AM",
+          "text": "User apatel: exists; enabled=true; locked=false; change at next sign-in=false; groups=Domain Users; active sessions=false."
+        },
+        {
+          "time": "10:59:51 AM",
+          "text": "Requester verification: The requested outcome is still not working. Please keep investigating."
+        },
+        {
+          "time": "10:59:59 AM",
+          "text": "Reviewed approved request REQ-2031 and requested scope."
+        },
+        {
+          "time": "11:00:36 AM",
+          "text": "Added Finance-Read. Existing sign-in token is unchanged."
+        },
+        {
+          "time": "11:01:05 AM",
+          "text": "Identity verified using approved callback and employee record."
+        },
+        {
+          "time": "11:01:21 AM",
+          "text": "Added Finance-Read. Existing sign-in token is unchanged."
+        },
+        {
+          "time": "11:01:29 AM",
+          "text": "Requester verification: The requested outcome is still not working. Please keep investigating."
+        },
+        {
+          "time": "11:01:40 AM",
+          "text": "Account enabled."
+        },
+        {
+          "time": "11:01:45 AM",
+          "text": "Requester verification: The requested outcome is still not working. Please keep investigating."
+        },
+        {
+          "time": "11:01:55 AM",
+          "text": "Sign-in completed; refreshed security group token."
+        },
+        {
+          "time": "11:02:00 AM",
+          "text": "Requester verification: Confirmed: the requested outcome is working. Thank you."
+        },
+        {
+          "time": "11:04:21 AM",
+          "text": "Ticket resolved."
+        },
+        {
+          "time": "11:23:39 AM",
+          "text": "Ticket resolved."
+        }
+      ],
+      "messages": [
+        {
+          "who": "You",
+          "text": "Complete approved identity callback."
+        },
+        {
+          "who": "Ava Patel",
+          "text": "Identity confirmed through the approved callback and employee record."
+        },
+        {
+          "who": "You",
+          "text": "What changed before this started?"
+        },
+        {
+          "who": "Ava Patel",
+          "text": "I transferred from Sales. My manager approved Finance access on request REQ-2031."
+        },
+        {
+          "who": "You",
+          "text": "Please test access again / confirm the requested outcome."
+        },
+        {
+          "who": "Ava Patel",
+          "text": "The requested outcome is still not working. Please keep investigating."
+        },
+        {
+          "who": "You",
+          "text": "Review authorization for the requested access change."
+        },
+        {
+          "who": "Ava Patel",
+          "text": "I transferred from Sales. My manager approved Finance access on request REQ-2031."
+        },
+        {
+          "who": "You",
+          "text": "Complete approved identity callback."
+        },
+        {
+          "who": "Ava Patel",
+          "text": "Identity confirmed through the approved callback and employee record."
+        },
+        {
+          "who": "You",
+          "text": "Please test access again / confirm the requested outcome."
+        },
+        {
+          "who": "Ava Patel",
+          "text": "The requested outcome is still not working. Please keep investigating."
+        },
+        {
+          "who": "You",
+          "text": "Please test access again / confirm the requested outcome."
+        },
+        {
+          "who": "Ava Patel",
+          "text": "The requested outcome is still not working. Please keep investigating."
+        },
+        {
+          "who": "You",
+          "text": "Please test access again / confirm the requested outcome."
+        },
+        {
+          "who": "Ava Patel",
+          "text": "Confirmed: the requested outcome is working. Thank you."
+        }
+      ],
+      "terminal": [],
+      "mistakes": 0
+    },
+    {
+      "locked": false,
+      "stale": false,
+      "passwordOK": true,
+      "enabled": true,
+      "exists": true,
+      "groups": [
+        "Domain Users",
+        "Operations-Read"
+      ],
+      "dns": "10.20.0.10",
+      "cache": false,
+      "ou": "Operations",
+      "gpo": true,
+      "token": true,
+      "mustChange": false,
+      "sessions": false,
+      "identity": false,
+      "approval": false,
+      "verified": true,
+      "status": "Resolved",
+      "notes": "INC-1050 — Intranet will not load  \nPriority: P2 High  \nRequester: Noah Reed | Operations  \nDevice: OPS-PC-031  \nStatus: Resolved\n\nIssue: The requester could not access the company intranet by name.\n\nInvestigation: Checked IP and DHCP configuration. The workstation had an active lease but was configured to use public DNS, 8.8.8.8. Name resolution for intranet.northstar.example failed, while a direct connection to 10.20.0.20 succeeded.\n\nRoot cause: The workstation was using a DNS server that could not resolve the company’s internal intranet name.\n\nResolution: Set the preferred DNS server to 10.20.0.10 and cleared the resolver cache. Repeated the name lookup successfully.\n\nVerification: The requester confirmed that the intranet worked.\n\nEnvironment: NorthStar IT Support Lab — simulated training environment.",
+      "log": [
+        {
+          "time": "11:12:17 AM",
+          "text": "intranet.northstar.example: name resolution failed. Direct connection to 10.20.0.20 succeeds."
+        },
+        {
+          "time": "11:12:50 AM",
+          "text": "OPS-PC-031: IPv4 10.20.0.122/24; gateway 10.20.0.1; DHCP enabled; lease active; DHCP server 10.20.0.10; DNS 8.8.8.8."
+        },
+        {
+          "time": "11:13:07 AM",
+          "text": "DNS server set to 10.20.0.10."
+        },
+        {
+          "time": "11:13:13 AM",
+          "text": "Requester verification: The requested outcome is still not working. Please keep investigating."
+        },
+        {
+          "time": "11:13:43 AM",
+          "text": "DHCP lease active; domain DNS reachable. No current resolver warnings."
+        },
+        {
+          "time": "11:13:56 AM",
+          "text": "Computer OU: Operations. Applied: Baseline, Operations Drive Mapping. Department mapping linked to Operations OU. Last processing successful."
+        },
+        {
+          "time": "11:14:10 AM",
+          "text": "DNS server set to 10.20.0.99."
+        },
+        {
+          "time": "11:14:13 AM",
+          "text": "Requester verification: The requested outcome is still not working. Please keep investigating."
+        },
+        {
+          "time": "11:15:23 AM",
+          "text": "DNS server set to 10.20.0.10."
+        },
+        {
+          "time": "11:15:29 AM",
+          "text": "DNS resolver cache cleared."
+        },
+        {
+          "time": "11:15:42 AM",
+          "text": "intranet.northstar.example resolves to 10.20.0.20. HTTP 200; intranet loads."
+        },
+        {
+          "time": "11:15:52 AM",
+          "text": "Requester verification: Confirmed: the requested outcome is working. Thank you."
+        },
+        {
+          "time": "11:19:02 AM",
+          "text": "Ticket resolved."
+        }
+      ],
+      "messages": [
+        {
+          "who": "You",
+          "text": "What changed before this started?"
+        },
+        {
+          "who": "Noah Reed",
+          "text": "I changed the network settings while trying to fix another problem."
+        },
+        {
+          "who": "You",
+          "text": "Please test access again / confirm the requested outcome."
+        },
+        {
+          "who": "Noah Reed",
+          "text": "The requested outcome is still not working. Please keep investigating."
+        },
+        {
+          "who": "You",
+          "text": "Please test access again / confirm the requested outcome."
+        },
+        {
+          "who": "Noah Reed",
+          "text": "The requested outcome is still not working. Please keep investigating."
+        },
+        {
+          "who": "You",
+          "text": "Please test access again / confirm the requested outcome."
+        },
+        {
+          "who": "Noah Reed",
+          "text": "Confirmed: the requested outcome is working. Thank you."
+        }
+      ],
+      "terminal": [],
+      "mistakes": 0
+    },
+    {
+      "locked": false,
+      "stale": false,
+      "passwordOK": true,
+      "enabled": true,
+      "exists": true,
+      "groups": [
+        "Domain Users",
+        "Sales-Read"
+      ],
+      "dns": "10.20.0.10",
+      "cache": false,
+      "ou": "Staging",
+      "gpo": false,
+      "token": true,
+      "mustChange": false,
+      "sessions": false,
+      "identity": false,
+      "approval": false,
+      "verified": false,
+      "status": "Open",
+      "notes": "",
+      "log": [],
+      "messages": [],
+      "terminal": [],
+      "mistakes": 0
+    },
+    {
+      "locked": false,
+      "stale": false,
+      "passwordOK": true,
+      "enabled": true,
+      "exists": false,
+      "groups": [],
+      "dns": "10.20.0.10",
+      "cache": false,
+      "ou": "HR",
+      "gpo": true,
+      "token": true,
+      "mustChange": false,
+      "sessions": false,
+      "identity": false,
+      "approval": false,
+      "verified": false,
+      "status": "Open",
+      "notes": "",
+      "log": [],
+      "messages": [],
+      "terminal": [],
+      "mistakes": 0
+    },
+    {
+      "locked": false,
+      "stale": false,
+      "passwordOK": true,
+      "enabled": true,
+      "exists": true,
+      "groups": [
+        "Domain Users",
+        "Sales-Read"
+      ],
+      "dns": "10.20.0.10",
+      "cache": false,
+      "ou": "Sales",
+      "gpo": true,
+      "token": true,
+      "mustChange": false,
+      "sessions": true,
+      "identity": false,
+      "approval": false,
+      "verified": false,
+      "status": "Open",
+      "notes": "",
+      "log": [],
+      "messages": [],
+      "terminal": [],
+      "mistakes": 0
+    }
+  ]
+}
